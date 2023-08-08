@@ -1,0 +1,30 @@
+import java.util.*;
+class HelloWorld {
+    
+  public   static void balanceFruits(int a,int b,int c)
+    {
+        int rem;
+        if(a>b)
+        {
+            rem=a-b;
+              System.out.print(c-rem);
+            
+        }
+        else
+        {
+            rem=b-a;
+            System.out.print(c+rem);
+        }
+  
+        
+    }
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int b,m,rs;
+       b=sc.nextInt(); 
+       m=sc.nextInt(); 
+       rs=sc.nextInt();
+       HelloWorld h=new HelloWorld();
+     h.balanceFruits(b,m,rs);
+    }
+}
